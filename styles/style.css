@@ -1,10 +1,13 @@
+body {
+    background-color: #E5E5E5;  
+}
+
 main {
     max-width: 1000px;
-    background-color: red;
     margin: 0 auto;
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
     font-family: 'Frank Ruhl Libre', serif;
 }
 
@@ -17,8 +20,170 @@ a {
 }
 
 :root {
-    background: #F17949;
-    background: #C7DDEA;
-    background: #FAB131;
-    background: #A9A19E;
+    --orange: #F17949;
+    --grey: #C7DDEA;
+    --yellow: #FAB131;
+    --dark-grey: #A9A19E;
 }
+
+/*----- Main nav-bar -----*/
+
+.main-nav{
+    background-color: #E5E5E5;  
+    min-height: 68px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.main-nav ul li {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    align-self: center;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.4;  
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    font-size: 12px;
+}
+
+.current {
+    color: black !important;
+    opacity: 1 !important;
+}
+
+/*--x-- Main nav-bar --x--*/
+
+/*----- Yellow Article -----*/
+
+.yellow-article {
+    background-color: #FAB131;
+    min-height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-article h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: -0.02px;
+    text-align: center;
+}
+
+.yellow-article p {
+    text-align: center;
+    max-width: 442px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*--x-- Yellow Article --x--*/
+
+/*----- Grid container -----*/
+
+.grid-container {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container article {
+    height: 340px;
+    width: 334px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.grid-container article p {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    max-width: 257px;
+    align-self: center;
+}
+
+.grid-container article h2 {
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    align-self: center;
+}
+
+.grid-container article h3 {
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.4);
+    align-self: flex-start;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    margin: 0;
+}
+
+.grid-container .box-1 {
+    background-color: #C7DDEA;
+}
+
+.grid-container .box-3 {
+    background-color: #EBEBEB; 
+}
+
+.grid-container .box-5 {
+    background: #F17949;
+}
+
+/*--x-- Grid container --x--*/
+
+/*----- Take-me-up -----*/
+
+.take-me-up {
+    min-height: 68px;
+    background-color: #A9A19E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem 0;
+   
+}
+
+.take-me-up a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/*--x-- Take-me-up --x--*/
+
+/*----- Main footer -----*/
+.main-footer {
+    min-height: 340px;
+    background: #777574;
+}
+
+
+/*--x-- Main footer --x--*/
+
+
+
