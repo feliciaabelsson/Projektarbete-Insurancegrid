@@ -1,0 +1,24 @@
+main {
+    max-width: 1000px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+h1,h2,h3 {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root {
+    background: #F17949;
+    background: #C7DDEA;
+    background: #FAB131;
+    background: #A9A19E;
+}
