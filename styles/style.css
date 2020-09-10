@@ -97,13 +97,13 @@ a {
 
 /*----- Grid container -----*/
 
-.grid-container {
+.grid-container-big {
     background: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.grid-container article {
+.grid-container-big article {
     height: 340px;
     width: 334px;
     display: flex;
@@ -111,14 +111,14 @@ a {
     position: relative;
 }
 
-.grid-container article p {
+.grid-container-big article p {
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
     max-width: 257px;
     align-self: center;
 }
 
-.grid-container article h2 {
+.grid-container-big article h2 {
     font-weight: 900;
     font-size: 45px;
     letter-spacing: -0.02em;
@@ -127,7 +127,7 @@ a {
     align-self: center;
 }
 
-.grid-container article h3 {
+.grid-container-big article h3 {
     font-weight: 900;
     font-size: 35px;
     letter-spacing: -0.02em;
@@ -139,15 +139,15 @@ a {
     margin: 0;
 }
 
-.grid-container .box-1 {
+.grid-container-big .box-1 {
     background-color: #C7DDEA;
 }
 
-.grid-container .box-3 {
+.grid-container-big .box-3 {
     background-color: #EBEBEB; 
 }
 
-.grid-container .box-5 {
+.grid-container-big .box-5 {
     background: #F17949;
 }
 
