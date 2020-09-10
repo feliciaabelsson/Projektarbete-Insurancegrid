@@ -1,3 +1,5 @@
+/*----- Global -----*/
+
 body {
     background-color: #E5E5E5;  
 }
@@ -19,7 +21,7 @@ a {
     font-family: 'Fira Sans', sans-serif;
 }
 
-.grid1 a {
+.btn {
     background: #FFFFFF;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 100px;
@@ -29,143 +31,38 @@ a {
     color: rgba(0, 0, 0, 0.8);
 }
 
-.grid1 a:hover {
+.btn:hover {
     background-color: #fab03174;
     transition-duration: all 500ms;
 }
 
-.family {
-    display:flex;
-    margin-left: 198px;
-    margin-right: 17px;
-    position: absolute;
-}
+/*--x-- Global --x--*/
 
-.grid2 p{
-    font-size: 11px;
-    display: flex;
-    letter-spacing: -0.02em;
-    justify-self: center;
-    align-self: end;
-    margin:0 auto;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.grid2 h2{
-    font-weight: 900;
-    font-size: 32px;
-    display: flex;
-    justify-self: center;
-    align-self: start;
-    margin:0 auto;
-    color: #FFFFFF;
-
-}
-
-.grid3 p{
-    font-size: 11px;
-    display: flex;
-    letter-spacing: -0.02em;
-    justify-self: center;
-    align-self: end;
-    margin:0 auto;
-
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.grid3 h2{
-    font-weight: 900;
-    font-size: 32px;
-    display: flex;
-    justify-self: center;
-    align-self: start;
-    margin:0 auto;
-
-    color: #FFFFFF;
-}
-
-
-.greyrek {
-    width: 100%;
-    height:612px;
-    position: relative;
-    background-color: #A9A19E;
-}
-
-
-:root {
-    --orange: #F17949;
-    --grey: #C7DDEA;
-    --yellow: #FAB131;
-    --dark-grey: #A9A19E;
-}
-
-/*----- First Grid container -----*/
+/*----- Header -----*/
 
 .header{
     flex-wrap: wrap;
 }
+
 .grid-container {
     display:grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: auto;
-    max-width:1000px;
-    min-width: 0;
-    margin:0 auto;
     position:relative;
-    
 }
 
 .grid-container article {
     position:relative;
 }
+
 .grid1 {
     display: grid;
     background-color: #C7DDEA;
     grid-column: 1/4;
     grid-row: 1/5;
-    position: absolute;
+    position: relative;
 }
 
-.grid2 {
-    display:grid;
-    background-color: #F17949;
-    grid-column: 4/7;
-    grid-row: 1/3;
-    
-}
-
-.grid3 {
-    display:grid;
-    background-color: #FAB131;
-    grid-column: 4/7;
-    grid-row: 3/5;
-    
-}
-.grid1 h1{
-    display:flex;
-    justify-content: center;
-    margin-left: 105px;
-    margin-right: 82px;
-    margin-bottom: 0rem;
-    font-size: 45px;
-    line-height: 100%;
-    letter-spacing: -0.02em;
-    color: #000000;
-    
-}
-
-.grid1 p {
-    display:flex;
-    justify-content: center;
-    margin-left: 105px;
-    margin-right: 128px;
-    align-self: start;
-    line-height: 24px;
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 14px;
-    
-}
 .grid1 a {
     font-weight: bold;
     font-size: 11px;
@@ -176,7 +73,248 @@ a {
     cursor: pointer;
     align-self: end;
 }
-/*--x-- First Grid container --x--*/
+
+.grid1 h1 {
+    display:flex;
+    justify-content: center;
+    margin-left: 105px;
+    margin-right: 82px;
+    margin-bottom: 0rem;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #000000; 
+}
+
+.grid1 p {
+    display:flex;
+    justify-content: center;
+    margin-left: 105px;
+    margin-right: 128px;
+    align-self: start;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px; 
+}
+
+.family {
+    display:flex;
+    margin-left: 198px;
+    margin-right: 17px;
+    position: absolute;
+}
+
+.grid2 {
+    display:grid;
+    background-color: #F17949;
+    grid-column: 4/7;
+    grid-row: 1/3; 
+}
+
+.grid2 p {
+    font-size: 11px;
+    display: flex;
+    letter-spacing: -0.02em;
+    justify-self: center;
+    align-self: end;
+    margin:0 auto;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.grid2 h2 {
+    font-weight: 900;
+    font-size: 32px;
+    display: flex;
+    justify-self: center;
+    align-self: start;
+    margin:0 auto;
+    color: #FFFFFF;
+}
+
+.grid3 p {
+    font-size: 11px;
+    display: flex;
+    letter-spacing: -0.02em;
+    justify-self: center;
+    align-self: end;
+    margin:0 auto;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.grid3 h2 {
+    font-weight: 900;
+    font-size: 32px;
+    display: flex;
+    justify-self: center;
+    align-self: start;
+    margin:0 auto;
+    color: #FFFFFF;
+}
+
+.grid3 {
+    display:grid;
+    background-color: #FAB131;
+    grid-column: 4/7;
+    grid-row: 3/5; 
+}
+
+.grey-btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/*----- Header -----*/
+
+/*----- Grey section -----*/
+
+.greyrek {
+    min-height: 612px;
+    background-color: #A9A19E;
+    position: relative;
+    display:flex;
+    justify-content:space-between;
+    justify-self: center;
+}
+
+.grey1 {
+    max-width: 314px;
+    max-height: 250px;
+    margin-left: 107px;
+    margin-right: 0px;
+    margin-top: 103px;
+}
+
+.grey1 h1 {
+    display:flex;
+    color: #FFFFFF;
+    position: relative;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    color: #FFFFFF;
+}
+
+.grey1 a {
+    margin-right: 150px;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
+    align-self: end;
+    position: relative;
+}
+
+.grey2 {
+    margin-right: 129px;
+    margin-left: 172px;
+    margin-top: 103px;
+    max-width:280px;
+    max-height: 237px;
+}
+
+.grey2 p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+} 
+
+/*--x-- Grey section --x--*/
+
+/*----- Card section -----*/
+.cards {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 68rem;
+}
+
+.cards-boxes {
+    max-width: 256px;
+    min-height: 308px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.image-people {
+    min-width: 236px;
+    min-height: 150px;
+    border-radius: 4px;
+    align-self: center;
+    position: absolute;
+    top: -2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.ppl-1 {
+    background: #C7DDEA;
+    position: relative;
+}
+
+.ppl-2{
+    background: #FAB131;
+    position: relative;
+}
+
+.ppl-3 {
+    background: #F17949;
+    position: relative;
+}
+
+.img-boy {
+    position: absolute;
+    top:1rem;
+    max-width: 40%;
+}
+
+.img-adult {
+    position: absolute;
+    top:1rem;
+    max-width: 40%;
+}
+
+.img-old {
+    position: absolute;
+    top:1rem;
+    max-width: 60%;
+}
+
+.card-title {
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 0;
+}
+
+.cards-boxes p {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    padding-left: 1rem;
+    padding-right: 1rem; 
+}
+
+/*--x-- Card section --x--*/
 
 /*----- Main nav-bar -----*/
 
@@ -256,8 +394,8 @@ a {
 }
 
 .grid-container-big article {
-    height: 340px;
-    width: 334px;
+    min-height: 340px;
+    min-width: 334px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -314,7 +452,6 @@ a {
     flex-direction: column;
     justify-content: center;
     padding: .5rem 0;
-   
 }
 
 .take-me-up a {
@@ -324,18 +461,90 @@ a {
     font-size: 17px;
     line-height: 20px;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 /*--x-- Take-me-up --x--*/
 
 /*----- Main footer -----*/
+
 .main-footer {
     min-height: 340px;
     background: #777574;
 }
 
-
 /*--x-- Main footer --x--*/
+
+
+@media only screen and (max-width: 700px) {
+    .grid-container {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .grid1 {
+        min-height: 700px;
+    }
+
+    .grid2, .grid3 {
+        min-height: 315px;
+    }
+
+    .greyrek {
+        flex-direction: column;
+        min-height: 1580px;
+        justify-content: initial;  
+    }
+
+    .grey1 {
+        justify-content: flex-start;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+
+    .grey2 {
+        align-self: center;
+        margin: 0;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;    
+    }
+
+    .grey1 a {
+        display: none;
+    }
+
+    .cards {
+        flex-direction: column;
+        top: 110rem;
+        left: 4rem;
+        gap: 2rem;
+    }
+
+    .yellow-article {
+        min-height: 550px;
+    }
+    .grid-container-big {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container-big article {
+        min-height: 170px;
+    }
+
+    .take-me-up {
+        display: none;
+    }
+    
+    
+    
+}
+
 
 
 
